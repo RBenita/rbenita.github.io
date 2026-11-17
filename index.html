@@ -235,12 +235,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-color: #222;
     }
 
+    /* ── TALKS ── */
+    .talks-section { margin-top: 44px; }
+    .talk { display: flex; gap: 32px; padding: 20px 0; }
+    .talk-year { flex-shrink: 0; width: 72px; color: #666; font-size: .9rem; font-weight: 500; }
+    .talk-info { flex: 1; }
+    .talk-info h3 { font-family: 'Lora', serif; font-size: 1.08rem; font-weight: 600; line-height: 1.4; margin-bottom: 8px; color: #111; }
+    .talk-info p { font-size: .87rem; color: #444; margin-bottom: 8px; }
+    .talk-info ul { list-style: none; padding: 0; margin: 0 0 14px; }
+    .talk-info li { color: #444; font-size: .87rem; margin-bottom: 5px; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       .hero { flex-direction: column; gap: 28px; }
       .avatar-circle { width: 120px; height: 120px; }
       .paper { flex-direction: column; }
       .paper-thumb { width: 100%; height: 160px; }
+      .talk { flex-direction: column; gap: 8px; }
     }
   </style>
 </head>
@@ -424,7 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="authors">
       <strong>Roi Benita</strong>, Michael Elad, Joseph Keshet    </div>
     <!-- ✏️ Venue & year -->
-    <div class="venue">Arxiv (2026)</div>
+    <div class="venue">Advances in Neural Information Processing Systems (NeurIPS) 2026</div>
     <!-- ✏️ Links — remove any you don't need, add arXiv/code/demo as needed -->
     <div class="paper-links">
       <!-- <a href="https://your-project-page.github.io" target="_blank">Project Page</a> -->
@@ -436,6 +447,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
   </div><!-- /papers -->
+
+  <!-- ═══ TALKS ═══ -->
+  <section class="talks-section" aria-labelledby="talks-heading">
+    <h2 class="section-title" id="talks-heading">Talks</h2>
+    <hr class="pub-divider" />
+
+    <div class="talk">
+      <div class="talk-year">2026</div>
+      <div class="talk-info">
+        <h3>Spectral Analysis of Diffusion Models</h3>
+        <p>Computer Vision Seminar — The Hebrew University of Jerusalem</p>
+      </div>
+    </div>
+
+    <div class="talk">
+      <div class="talk-year">2025</div>
+      <div class="talk-info">
+        <h3>Text to Speech: Presentations of <a href="https://proceedings.iclr.cc/paper_files/paper/2024/file/8f182e220092f7f1fc44f3313023f5a0-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer">DiffAR</a></h3>
+        <p>Research talks in Japan at the National Institute of Informatics (Junichi Yamagishi); the University of Tokyo (Yuki Saito, Nobuaki Minematsu); NTT Kyoto (Tomohiro Nakatani, Marc Delcroix, Shoko Araki); Sony AI (Emiru Tsunoo); and NEC (Toshinori Araki).</p>
+      </div>
+    </div>
+  </section>
 
 </div><!-- /page -->
 </body>
